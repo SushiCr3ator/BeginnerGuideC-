@@ -2,8 +2,8 @@
 
 its abit difficult to really read if u wanna run a function in a class write this in main():
 
-mymaths.m;
-m.(function u wanna see);
+mymaths.m; <br>
+m.(function u wanna see); <br>
 
 i.e.
 i wanna get higher_maths():
