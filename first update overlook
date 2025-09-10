@@ -1,0 +1,112 @@
+#include <cmath>
+#include <iostream>
+
+int num; //global variable
+
+//to open/close un-/necessary code hover on the side of the line of the function and press the ">" or arrow facing down...
+
+/*if u wanna add something in myMaths write this in main:
+ * myMaths m;
+ * m."function u wanna use";
+ */
+class myMaths{
+    /*class is a completely different from the rest of the file and is usually considered external
+     * which means u need to change its state from "private" to "public" if u want to use stuff in it
+     * Private means other files wont be able to access its variables and functions
+     * Public means every other files can access everything it has
+     */
+public:
+    void simple_math() {
+    std::string name = "Andreaz Kurt Prado";
+    num = 30;
+    std::cout << num << std::endl
+    << name + "unc status U-U \n aaaaaa" << std::endl;
+
+    float x;
+    double y;
+    int z;
+    x = y = z = 50;
+    std::cout << "addition \n" << x * y / z << std::endl;
+}
+    void maximum() {
+        std::cout << std::max(1,100); // like its name it takes the max between the variables u put in it
+    }
+    void minimum() {
+        std::cout << std::min(10,100); // gets the minimum between the variables given
+    }
+    void higher_maths() {
+        int sqrt_v =sqrt(64);
+        double round_v = round(2.3453434); // needs double cuz it has decimals
+        int log_v = log(2);
+        std::cout << "the squareroot of 64 is " << sqrt_v << "\n"; // wurzel
+        std::cout << "2.3453434 rounded is " << round_v << "\n"; // runden
+        std::cout << "the log of 2 is " << log_v << "\n";
+
+    }
+};
+
+void teach_if() {
+    int a = 5;
+    int b = 1;
+    if (a != b) {
+        std::cout << "blah blah blah" << std::endl;
+    }
+}
+void short_if() {
+
+    int a; // if left like this it means 'a' (variable) = 0;
+    std::string result = (a != 5) ? "blah blah blah" : "bruh";
+    std::cout << result << std:: endl;
+}
+
+void teach_switch() {
+    int a = 1;
+    switch (a) {
+        case (1):
+            std::cout << "it's definitely an 'a'";
+            /*NOTE: DO NOT EVER DO """" tat means 2 different text
+            if u want to write "" inside a "" use '' like what i did in line 37 :thumbs_up:
+            */
+            break;
+        case (2):
+            std::cout << "grrr";
+            break;
+        case (3):
+            std::cout << "so on and so forth";
+        break;
+    }
+}
+
+void teach_forLoop() {
+    for (int i = 0; i < 6; i++) {
+        /* how i understand this loop is like first set a start point "i = 0"
+         * then if "i" is smaller than 5 do the code
+         * AND add 1 to "i"
+         */
+        std::cout << i << "\n";
+    }
+}
+void teach_while() {
+    int i = 0;
+    while (i < 6) {
+        std::cout << i << "\n";
+        i++; // if u want to change it to +2 every loop u need to write "i = i + 2" or else it wont work
+    }
+}
+void teach_do_While() {
+    int i = 0;
+    do {
+        if (i == 0) {
+            i++;
+        }
+        std::cout << i << "\n";
+        i++;
+    }while (i <= 5);
+}
+
+// to play the code put the function in main() and press play on the top right :)
+int main() {
+    myMaths m;
+    m.higher_maths();
+    return 0;
+}
