@@ -5,7 +5,7 @@ its abit difficult to really read if u wanna run a function in a class write thi
 mymaths.m; <br>
 m.(function u wanna see); <br>
 
-i.e.
-i wanna get higher_maths():
-mymaths m;
+i.e.<br>
+i wanna get higher_maths():<br>
+mymaths m;<br>
 m.higher_maths();
