@@ -91,6 +91,7 @@ public:
         }
     }
 
+//last 3 are connected together to make Merge_Sort
     // Merges two subarrays of vec.
     // First subarray is vec[left..mid]
     // Second subarray is vec[mid+1..right]
