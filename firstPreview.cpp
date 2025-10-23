@@ -74,6 +74,9 @@ void teach_switch() {
         case (3):
             std::cout << "so on and so forth";
         break;
+        default:
+           std::cout << "none given" << std::endl;
+        //basically if all the cases r not fufilled switch to default Anweisung
     }
 }
 
